@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title> <%= htmlWebpackPlugin.options.title %></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.13/svg.min.js" integrity="sha256-lGl8w8KbUgg+8cFC38Erx5NRwynFuqFLvdwkdR9ggjM=" crossorigin="anonymous"></script>
+  <script src="./scripts.js"></script>
+</head>
+  <body >
+      <div id="drawing"></div>
+
+
+      <svg id='shape' xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="250" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <circle id="circle" r="65" cx="125" cy="125" fill="none" stroke="#fa5"    stroke-width="40" stroke-dasharray="4">
+     </svg>
+
+
+      <script>
+     var whatever = document.getElementById("shape");
+     console.log(whatever);
+     whatever.addEventListener("click", console.log("it worked"))
+     
+      </script>
+  </body>
+</html>
